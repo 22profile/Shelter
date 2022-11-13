@@ -395,6 +395,17 @@ body {
   cursor: pointer;
 }
 
+.error {
+  align-items: center;
+  display: grid;
+  justify-content: center;
+}
+
+.error-text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: white;
+}
 .alert {
   align-items: center;
   display: grid;
