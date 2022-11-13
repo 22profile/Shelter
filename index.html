@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shelter - Ванилла</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/shelter.png" />
+  </head>
+  <body>
+    <div class="navbar">
+      <!-- <img src="images/logo.svg" alt="Логотип" class="logo" /> -->
+      <img src="images/shelter.png" alt="Логотип" class="logo2" />
+      <ul class="nav">
+        <li><a class="nav-text active" href="/">Главная</a></li>
+        <li><a class="nav-text" href="/" target="_blank">Дискорд</a></li>
+        <li>
+          <a
+            class="nav-text"
+            href="https://www.youtube.com/channel/UCzOzmmUIo-Xds_sxIYvTCPA"
+            target="_blank"
+            >YouTube</a
+          >
+        </li>
+      </ul>
+      <a href="/engineer"><button class="sign">Войти</button></a>
+      <img class="nav-img" src="images/header.svg" />
+    </div>
+    <div class="desc">
+      <h1>Shelter - это</h1>
+      <h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do
+        eiusmod tempor incididunt ut labore et dolore<br />
+        magna aliqua. Tempus iaculis urna id<br />
+        volutpat lacus laoreet non curabitur.
+      </h2>
+      <a id="openjoin"><button>Начать играть</button></a>
+    </div>
+    <div class="footer">
+      <img class="footer-img" src="images/header.svg" />
+      <div class="urls">
+        <a class="dev" href="https://ignatka.tk" target="_blank">Разработчик</a>
+        <a class="feedback">Обратная связь</a>
+      </div>
+    </div>
+
+    <div class="snowflakes" aria-hidden="true">
+      <!-- <div class="snowflake"><img src="images/shelter.png" width="35px" /></div> -->
+      <div class="snowflake">💲</div>
+      <div class="snowflake">💵</div>
+      <div class="snowflake">💲</div>
+      <div class="snowflake">💵</div>
+      <div class="snowflake">💲</div>
+      <div class="snowflake">💵</div>
+      <div class="snowflake">💲</div>
+      <div class="snowflake">💵</div>
+      <div class="snowflake">💲</div>
+      <div class="snowflake">💵</div>
+      <div class="snowflake">💲</div>
+      <div class="snowflake">💵</div>
+      <div class="snowflake">💲</div>
+    </div>
+
+    <div id="join" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <button class="donmenu">
+          <div class="donate">
+            <script src="https://api.trademc.org/trademcapi.js"></script>
+            <div id="trademc-buyform"></div>
+            <script>
+              TrademcAPI.GetBuyForm({
+                Shop: "195624",
+                Title: "Купить проходку",
+                Nickname: "Введите ваш никнейм",
+                Item: "Выберите товар",
+                Coupon: "Код пригласившего, если есть",
+                Button: "Продолжить",
+                Success_URL: "https://shelter.ml/",
+                Pending_URL: "https://shelter.ml/",
+                Fail_URL: "https://shelter.ml/",
+                PastPlaceID: "trademc-buyform",
+              });
+            </script>
+          </div>
+        </button>
+      </div>
+    </div>
+    <script>
+      var modal = document.getElementById("join");
+      var btn = document.getElementById("openjoin");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
