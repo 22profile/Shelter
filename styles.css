@@ -282,6 +282,28 @@ body {
   text-decoration: none;
 }
 
+.scene {
+  text-align: right;
+  margin-top: 8%;
+  position: absolute;
+  z-index: -5;
+}
+
+.scene-img {
+  width: 40%;
+}
+@media screen and (max-width: 1500px) {
+  .scene-img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .scene-img {
+    width: 0%;
+  }
+}
+
 .feedback {
   left: 134px;
   top: 106%;
