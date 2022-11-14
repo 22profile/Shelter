@@ -15,8 +15,8 @@ body {
 
 .logo2 {
   position: absolute;
-  width: 105px;
-  left: 43px;
+  width: 68px;
+  left: 55px;
   top: 35px;
 }
 @media screen and (max-width: 600px) {
@@ -167,7 +167,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .desc h1 {
-    left: 70px;
+    left: 55px;
     font-size: 25px;
   }
 }
@@ -202,7 +202,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .desc h2 {
-    left: 70px;
+    left: 55px;
     font-size: 15px;
     top: 250px;
   }
@@ -229,19 +229,12 @@ body {
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
 }
-@media screen and (max-width: 700px) {
-  .desc button {
-    width: 345px;
-    height: 75px;
-    left: 100px;
-    top: 580px;
-  }
-}
+
 @media screen and (max-width: 700px) {
   .desc button {
     width: 325px;
     height: 55px;
-    left: 56px;
+    left: 45px;
     top: 550px;
     font-size: 25px;
   }
